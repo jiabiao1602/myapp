@@ -32,5 +32,5 @@ dashboardPage(
                                    choices=c("graph","scatterplot","two-key plot", "matrix",  
                                              "matrix3D","paracoord"))),
               column(6,numericInput('clusters', '请选择k值', 3,
-                                    min = 1, max = 9))
+                                    min = 1, max = 9)))
     )))
