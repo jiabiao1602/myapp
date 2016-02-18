@@ -41,10 +41,4 @@ function(input, output) {
          pch = 20, cex = 2)
     points(clusters()$centers, pch = 4, cex = 2, lwd = 4)
   })
-  # 评价线性模型拟合情况可视化
-  output$lm.fit <- renderPlot({
-    fit <- lm(Sepal.Length~Sepal.Width,data=iris[,1:4])
-    par(mfrow=c(2,2),pch="*",bg="aliceblue")
-    plot(fit)
-  })
 }
