@@ -32,8 +32,5 @@ dashboardPage(
                                    choices=c("graph","scatterplot","two-key plot", "matrix",  
                                              "matrix3D","paracoord"))),
               column(6,numericInput('clusters', '请选择k值', 3,
-                                    min = 1, max = 9)),
-              column(12,box(title = "评价线性模型拟合情况可视化",
-                            solidHeader = TRUE,collapsible = T,width="100%",
-                            background = "lime",plotOutput("lm.fit"))))
+                                    min = 1, max = 9))
     )))
